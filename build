@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+b libdcore/@out/
+b libdcore/@out/ -vn clean update |& compiledb

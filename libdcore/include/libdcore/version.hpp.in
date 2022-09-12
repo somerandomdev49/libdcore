@@ -1,0 +1,34 @@
+#pragma once
+
+// The numeric version format is AAAAABBBBBCCCCCDDDE where:
+//
+// AAAAA - major version number
+// BBBBB - minor version number
+// CCCCC - bugfix version number
+// DDD   - alpha / beta (DDD + 500) version number
+// E     - final (0) / snapshot (1)
+//
+// When DDDE is not 0, 1 is subtracted from AAAAABBBBBCCCCC. For example:
+//
+// Version      AAAAABBBBBCCCCCDDDE
+//
+// 0.1.0        0000000001000000000
+// 0.1.2        0000000001000020000
+// 1.2.3        0000100002000030000
+// 2.2.0-a.1    0000200001999990010
+// 3.0.0-b.2    0000299999999995020
+// 2.2.0-a.1.z  0000200001999990011
+//
+#define LIBDCORE_VERSION       $libdcore.version.project_number$ULL
+#define LIBDCORE_VERSION_STR   "$libdcore.version.project$"
+#define LIBDCORE_VERSION_ID    "$libdcore.version.project_id$"
+#define LIBDCORE_VERSION_FULL  "$libdcore.version$"
+
+#define LIBDCORE_VERSION_MAJOR $libdcore.version.major$
+#define LIBDCORE_VERSION_MINOR $libdcore.version.minor$
+#define LIBDCORE_VERSION_PATCH $libdcore.version.patch$
+
+#define LIBDCORE_PRE_RELEASE   $libdcore.version.pre_release$
+
+#define LIBDCORE_SNAPSHOT_SN   $libdcore.version.snapshot_sn$ULL
+#define LIBDCORE_SNAPSHOT_ID   "$libdcore.version.snapshot_id$"

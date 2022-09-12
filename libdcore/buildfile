@@ -1,0 +1,2 @@
+./@./out/: {src/ include/ tests/} doc{README.md} manifest
+tests/: install = false

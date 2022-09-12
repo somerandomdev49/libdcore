@@ -1,0 +1,16 @@
+: 1
+name: libdcore
+version: 0.1.0-a.0.z
+summary: DragonCore Engine
+license: MIT
+description-file: README.md
+url: https://dragoncoregame.web.app/libdcore
+email: mike.redko49@gmail.com
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0
+depends: glfw
+depends: stb_image
+depends: glm
+depends: entt
+depends: libimgui-platform-glfw
+depends: libimgui-render-vulkan

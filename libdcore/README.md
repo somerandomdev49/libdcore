@@ -1,0 +1,3 @@
+# libdcore
+
+C++ library

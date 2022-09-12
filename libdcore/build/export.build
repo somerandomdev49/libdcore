@@ -1,0 +1,6 @@
+$out_root/
+{
+  include src/libdcore/
+}
+
+export $out_root/src/libdcore/$import.target

@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+categories=(dcore)
+for cat in $categories; do
+	echo "running tests for $cat..."
+	for t in out/tests/$cat/*; do
+		[ -f $t/driver ] && $t/driver &
+	done
+done
